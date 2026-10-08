@@ -1,0 +1,146 @@
+name: voisin_troc_app
+description: Application mobile de troc de services entre voisins avec matching IA.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.11.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^3.2.0
+  firebase_auth: ^5.1.0
+  cloud_firestore: ^5.0.0
+  firebase_storage: ^12.1.0
+  firebase_messaging: ^15.0.0
+  firebase_crashlytics: ^4.1.0
+
+  # State Management
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.5.0
+  riverpod_generator: ^2.5.1
+
+  # UI / Design
+  flutter_screenutil: ^5.9.3
+  google_fonts: ^6.2.1
+  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+  iconsax_plus: ^1.0.6
+  lottie: ^3.4.0
+
+  # Maps & Location
+  google_maps_flutter: ^2.9.1
+  geolocator: ^13.0.0
+  geocoding: ^3.0.0
+
+  # Firebase + AI
+  google_generative_ai: ^0.4.2
+
+  # Passkeys / FIDO2 / Authentication
+  local_auth: ^2.2.0
+  webauthn: ^0.1.0
+
+  # Persistence / storage / utilities
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  intl: ^0.19.0
+  uuid: ^4.0.0
+  timeago: ^3.7.0
+  http: ^1.2.1
+  dio: ^5.4.0
+  connectivity_plus: ^6.0.0
+  image_picker: ^1.0.8
+  image_cropper: ^5.0.1
+  form_builder_validators: ^9.1.0
+  equatable: ^2.0.5
+
+  # Route & app state
+  go_router: ^14.0.0
+
+  # Better UX
+  animated_bottom_navigation_bar: ^1.0.3
+  flutter_staggered_animations: ^1.0.2
+
+  # Firebase AI / backend adaptation
+  firebase_vertexai: ^0.10.0
+
+  # Notification / local messaging
+  flutter_local_notifications: ^17.2.3
+
+  # Charts / rating
+  fl_chart: ^0.68.0
+
+  # QR / invite / sharing
+  share_plus: ^10.0.0
+
+  # Clipboard and snackbars utilities
+  clipboard: ^0.1.4
+
+  # Map clustering
+  flutter_map: ^7.0.0
+
+  # Device capabilities
+  package_info_plus: ^8.0.0
+
+  # Security / encryption
+  crypto: ^3.1.0
+
+  # JSON generation
+  json_annotation: ^4.1.0
+
+  # Logging / debug
+  logger: ^2.0.0
+
+  # Firebase extension support
+  cloud_functions: ^5.0.0
+
+  # Contracts / typed data
+  freezed_annotation: ^2.0.0
+
+  # Input formatting utils
+  masking_text_input_formatter: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.11
+  hive_generator: ^2.0.1
+  riverpod_generator: ^2.5.1
+  freezed: ^2.5.0
+  json_serializable: ^6.8.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+    - assets/lottie/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
